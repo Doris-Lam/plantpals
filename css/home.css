@@ -12,6 +12,10 @@ body {
     z-index: 3;
 }
 
+section {
+    pointer-events: none;
+}
+
 h1{
     font-family: "Nabla", monospace;
     padding-top: 10%;
@@ -46,6 +50,7 @@ h2{
     bottom: 200px;
     left: 100px;
     align-content: stretch;
+    pointer-events: all;
     
 }
 
