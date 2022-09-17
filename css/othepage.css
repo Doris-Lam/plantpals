@@ -10,7 +10,7 @@ body {
     z-index: 3;
 }
 
-sun{
+.sun {
     position: fixed;
     bottom: 0px;
     width: 120%;
