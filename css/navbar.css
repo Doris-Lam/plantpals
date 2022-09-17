@@ -11,7 +11,7 @@ header {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding: 50px 05%;
+    padding: 60px 05%;
     background-color: #C2EAB4 ;
 }
 
@@ -28,10 +28,11 @@ header {
     font-weight: 100;
     color: #371705;
     text-decoration: none;
+    text-align: center;
 }
 
 .nav__links li {
-    padding: 0px 20px;
+    padding: 10px 80px;
 }
 
 .nav__links li a:hover {
