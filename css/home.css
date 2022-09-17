@@ -1,6 +1,10 @@
 
-.section{
+body {
     background-color: #DFF7FF;
+}
+
+header {
+    position: fixed;
 }
 
 .home {
@@ -35,6 +39,7 @@ h2{
 .image {
     position: absolute;
     z-index: 0;
+    width: 600px;
 }
 
 .wood {
@@ -42,23 +47,30 @@ h2{
     display: flex;
     align-items: center;
     z-index: 0;
-    bottom: 0%;
-    left: 30%;
-    align-content:stretch;
-    width: 60px;
-
+    bottom: 0;
+    left: 64px;
+    align-content: stretch;
 }
 
 .float {
     position: absolute;
-    left: -700%;
-    top: 50%;
+    padding-left: 0;
     font-family: "Bungee Shade", monospace;
     font-size: 100px;
 }
 
 .grass{
-    position: absolute;
-    top: 50%;
-    size: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 120%;
+    size: 20px;
+    z-index: -2;
+}
+
+.grass img {
+    width: 100%;
+}
+
+.woodimage{
+    width: 500px;
 }
