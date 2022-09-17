@@ -12,7 +12,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 05%;
-    background-color: #639953;
+    background-color: #CFF3FF;
 }
 
 .nav__links {
@@ -24,9 +24,9 @@ header {
 .cta,
 .overlay__content a {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2vw;
+    font-size: 3.2vw;
     font-weight: 100;
-    color: #edf0f1;
+    color: #371705;
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ header {
 }
 
 .cta:hover {
-    background-color: #2a4b7c;
+    background-color: #95D9F0 ;
     transform: translate(0, -6px);
     box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5),
     -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
