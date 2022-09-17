@@ -43,17 +43,22 @@ h2{
     display: flex;
     align-items: center;
     z-index: 0;
-    bottom: 0;
-    left: 64px;
+    bottom: 200px;
+    left: 100px;
     align-content: stretch;
+    
 }
 
 .float {
     position: absolute;
-    margin-left: -100px;
     font-family: "Bungee Shade", monospace;
-    font-size: 50px;
+    font-size: 100px;
+    bottom: 300px;
+    right: 200px;
+    
 }
+
+    
 
 .grass{
     position: fixed;
@@ -68,7 +73,8 @@ h2{
 }
 
 .woodimage{
-    width: 700px;
+    width: 850px;
+    text-align: center;
 }
 
 .clouds{
