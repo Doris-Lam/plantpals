@@ -3,9 +3,6 @@ body {
     background-color: #DFF7FF;
 }
 
-header {
-    position: fixed;
-}
 
 .home {
     /*position: static;*/
