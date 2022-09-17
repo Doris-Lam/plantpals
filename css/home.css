@@ -3,7 +3,6 @@ body {
     background-color: #DFF7FF;
 }
 
-
 .home {
     /*position: static;*/
     padding-top: 150px;
@@ -51,9 +50,9 @@ h2{
 
 .float {
     position: absolute;
-    padding-left: 0;
+    margin-left: -100px;
     font-family: "Bungee Shade", monospace;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .grass{
@@ -69,5 +68,33 @@ h2{
 }
 
 .woodimage{
-    width: 500px;
+    width: 700px;
 }
+
+.clouds{
+    position: fixed;
+    bottom: 55%;
+    size: 10px;
+    width: 90%;
+    z-index: -3;
+    right: 40%;
+}
+
+.clouds img {
+    width: 100%;
+}
+
+.cloudslong{
+    position: fixed;
+    bottom: 40%;
+    size: 10px;
+    width: 90%;
+    z-index: -3;
+    left: 40%;
+}
+
+.cloudslong img {
+    width: 100%;
+}
+
+
