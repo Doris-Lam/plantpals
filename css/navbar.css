@@ -7,12 +7,12 @@
 
 header {
     display: flex;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    top: 0;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 05%;
-    background-color: #CFF3FF;
+    padding: 50px 05%;
+    background-color: #C2EAB4 ;
 }
 
 .nav__links {

@@ -14,16 +14,17 @@
 
 h1{
     font-family: "Nabla", monospace;
-    padding-left: 200px;
-    font-size: 200px;
+    padding-top: 10%;
+    padding-left: 100px;
+    font-size: 250px;
 }
 
 
 h2{
     font-family: "Nabla", monospace;
-    margin-top: -50px;
-    padding-left: 400px;
-    font-size: 200px;
+    margin-top: -70px;
+    padding-left: 300px;
+    font-size: 250px;
 }
 
 .box {
@@ -40,15 +41,24 @@ h2{
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
     z-index: 0;
     bottom: 0%;
-    left: 0;
+    left: 30%;
+    align-content:stretch;
+    width: 60px;
 
 }
 
 .float {
     position: absolute;
-    left: 50%;
+    left: -700%;
     top: 50%;
+    font-family: "Bungee Shade", monospace;
+    font-size: 100px;
+}
+
+.grass{
+    position: absolute;
+    top: 50%;
+    size: 10px;
 }
