@@ -1,0 +1,12 @@
+.home {
+    position: static;
+    padding-left: 300px;
+    padding-top: 300px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 7vw;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    background-size: 100% 100%;
+}
