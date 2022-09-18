@@ -73,3 +73,24 @@ body {
 .plant img {
     width: 100%;
 }
+
+.textspeech{
+    position: fixed;
+    bottom: 40%;
+    size: 10px;
+    width: 60%;
+    z-index: -1;
+    left: 3%;
+}
+
+.textspeech img {
+    width: 100%;
+}
+
+.bubble{
+    font-family: "Nabla", monospace;
+    margin-top: -70px;
+    padding-left: 300px;
+    font-size: 250px;
+    z-index: -1;
+}
