@@ -35,13 +35,13 @@ header {
 }
 
 .temp img {
-    width: 50%;
+    width: 60%;
 }
 
 
 .water {
     position: fixed;
-    top: 0px;
+    top: -7px;
     size: 10px;
     width: 35%;
     right: -80px;

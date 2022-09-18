@@ -13,22 +13,18 @@
     <header>
         <nav>
             <div class="sun">
-                <img id="sun-img" src="../img/sun.png"/>
+                <img id="sun-img" src=""/>
             </div>
 
             <div class="temp">
-                <img id="temp-img" src="../img/thermo.png"/>
+                <img id="temp-img" src=""/>
             </div>
 
             <div class="water">
-                <img id= "water-img" src="../img/water.png"/>
+                <img id= "water-img" src=""/>
             </div>
-    
-
-
         </nav>
     </header>
-
 
 <!--</section>-->
 
@@ -38,14 +34,19 @@
         const tempImage = document.getElementById("temp-img");
         const sunImage = document.getElementById("sun-img");
 
-        const water2Image = document.getElementById("water2-img");
-        const temp2Image = document.getElementById("temp2-img");
-        const sun2Image = document.getElementById("sun2-img");
+        const path = "../img/";
 
-        const water3Image = document.getElementById("water3-img");
-        const temp3Image = document.getElementById("temp3-img");
-        const sun3Image = document.getElementById("sun3-img");
+        const sunSrc = "sun.png";
+        const tempSrc = "thermo.png"
+        const waterSrc = "water.png"
 
+        const water2Src = "water2.png";
+        const temp2Src = "temp2.png";
+        const sun2Src = "sun2.png";
+
+        const water3Src = "water3.png";
+        const temp3Src = "temp3.png";
+        const sun3Src = "sun3.png";
 
         setInterval(() => {
             console.log("test");
@@ -55,38 +56,37 @@
                     // const sample = {
                     //     moisture: 12,
                     //     water: 12,
-                    //      temperature: 12
+                    //     temperature: 12
                     // }
 
                     console.log(data['sun']);
                     console.log(data['temperature'])
                     // console.log(Object.keys(sample).length)
-                    console.log(data['moisture'])
+                    console.log(data['water'])
 
-                    if (data['sun'] < 80) {
-                        sunImage.src = sun2Image.src;
-                    } else if () {
-
+                    if (data['sun'] >= 40) {
+                        sunImage.src = path + sunSrc;
+                    } else if (data['sun'] < 40 && data['sun'] > 10) {
+                        sunImage.src = path + sun3Src;
                     } else {
-
+                        sunImage.src = path + sun2Src;
                     }
 
-                    if (data['temperature'] > 80) {
-                        sunImage.src = tempImage.src;
-                    } else if () {
-
+                    if (data['temperature'] >= 40) {
+                        tempImage.src = path + tempSrc
+                    } else if (data['temperature'] < 40 && data['temperature'] > 10) {
+                        tempImage.src = path + temp3Src;
                     } else {
-
+                        tempImage.src = path + temp2Src;
                     }
 
-                    if (data['moisture'] > 80) {
-
-                    } else if () {
-
+                    if (data['water'] >= 40) {
+                        waterImage.src = path + waterSrc;
+                    } else if (data['water'] < 40 && data['water'] > 10) {
+                        waterImage.src = path + water3Src;
                     } else {
-
+                        waterImage.src = path + water2Src;
                     }
-
                 })
             })
             // const waterImage = document.getElementById("water-img");
