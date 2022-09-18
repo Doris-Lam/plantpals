@@ -29,6 +29,7 @@
 <!--</section>-->
 
 <script>
+
     window.onload= function () {
         const waterImage = document.getElementById("water-img");
         const tempImage = document.getElementById("temp-img");
@@ -53,36 +54,36 @@
             fetch("https://catfact.ninja/fact").then((response) => {
                 //const data= JSON.parse(response);
                 response.json().then((data) => {
-                    // const sample = {
-                    //     moisture: 12,
-                    //     water: 12,
-                    //     temperature: 12
-                    // }
+                    const sample = {
+                        moisture: 40,
+                        water: 10,
+                       temperature: 20
+                    }
 
-                    console.log(data['sun']);
-                    console.log(data['temperature'])
+                    console.log(sample['sun']);
+                    console.log(sample['temperature'])
                     // console.log(Object.keys(sample).length)
-                    console.log(data['water'])
+                    console.log(sample['water'])
 
-                    if (data['sun'] >= 40) {
+                    if (sample['sun'] >= 40) {
                         sunImage.src = path + sunSrc;
-                    } else if (data['sun'] < 40 && data['sun'] > 10) {
+                    } else if (sample['sun'] < 40 && sample['sun'] > 10) {
                         sunImage.src = path + sun3Src;
                     } else {
                         sunImage.src = path + sun2Src;
                     }
 
-                    if (data['temperature'] >= 40) {
+                    if (sample['temperature'] >= 40) {
                         tempImage.src = path + tempSrc
-                    } else if (data['temperature'] < 40 && data['temperature'] > 10) {
+                    } else if (sample['temperature'] < 40 && sample['temperature'] > 10) {
                         tempImage.src = path + temp3Src;
                     } else {
                         tempImage.src = path + temp2Src;
                     }
 
-                    if (data['water'] >= 40) {
+                    if (sample['water'] >= 40) {
                         waterImage.src = path + waterSrc;
-                    } else if (data['water'] < 40 && data['water'] > 10) {
+                    } else if (sample['water'] < 40 && sample['water'] > 10) {
                         waterImage.src = path + water3Src;
                     } else {
                         waterImage.src = path + water2Src;
