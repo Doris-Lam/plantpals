@@ -41,6 +41,10 @@
         const temp2Image = document.getElementById("temp2-img");
         const sun2Image = document.getElementById("sun2-img");
 
+        const water3Image = document.getElementById("water3-img");
+        const temp3Image = document.getElementById("temp3-img");
+        const sun3Image = document.getElementById("sun3-img");
+
 
         setInterval(() => {
             console.log("test");
@@ -58,19 +62,25 @@
                     // console.log(Object.keys(sample).length)
                     console.log(data['moisture'])
 
-                    if (data['sun'] > 80) {
+                    if (data['sun'] < 80) {
                         sunImage.src = sun2Image.src;
+                    } else if () {
+
                     } else {
 
                     }
 
                     if (data['temperature'] > 80) {
                         sunImage.src = tempImage.src;
+                    } else if () {
+
                     } else {
 
                     }
 
                     if (data['moisture'] > 80) {
+
+                    } else if () {
 
                     } else {
 
