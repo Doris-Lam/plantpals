@@ -30,44 +30,59 @@
 
 <!--</section>-->
 
-<!--<script>-->
-<!--    window.onload= function () {-->
-<!--        const waterImage = document.getElementById("water-img");-->
-<!--        const tempImage = document.getElementById("temp-img");-->
-<!--        const sunImage = document.getElementById("sun-img");-->
+<script>
+    window.onload= function () {
+        const waterImage = document.getElementById("water-img");
+        const tempImage = document.getElementById("temp-img");
+        const sunImage = document.getElementById("sun-img");
 
-<!--        const water2Image = document.getElementById("water2-img");-->
-<!--        const temp2Image = document.getElementById("temp2-img");-->
-<!--        const sun2Image = document.getElementById("sun2-img");-->
+        const water2Image = document.getElementById("water2-img");
+        const temp2Image = document.getElementById("temp2-img");
+        const sun2Image = document.getElementById("sun2-img");
 
 
-<!--        setInterval(() => {-->
-<!--            console.log("test");-->
-<!--            fetch("https://catfact.ninja/fact").then((response) => {-->
-<!--                //const data= JSON.parse(response);-->
-<!--                response.json().then((data) => {-->
-<!--                    // const sample = {-->
-<!--                    //     fact: "test",-->
-<!--                    //     length: 12,-->
-<!--                    // }-->
+        setInterval(() => {
+            console.log("test");
+            fetch("https://catfact.ninja/fact").then((response) => {
+                //const data= JSON.parse(response);
+                response.json().then((data) => {
+                    // const sample = {
+                    //     moisture: 12,
+                    //     water: 12,
+                    //      temperature: 12
+                    // }
 
-<!--                    console.log(data.fact);-->
-<!--                    console.log(data.length)-->
+                    console.log(data['sun']);
+                    console.log(data['temperature'])
+                    // console.log(Object.keys(sample).length)
+                    console.log(data['moisture'])
 
-<!--                    if (data.length > 80) {-->
-<!--                        sunImage.src = waterImage.src;-->
-<!--                    }-->
-<!--                    if (data.length > 100) {-->
-<!--                        sunImage.src = tempImage.src;-->
-<!--                    }-->
-<!--                })-->
-<!--            })-->
-<!--            // const waterImage = document.getElementById("water-img");-->
-<!--            // console.log(waterImage.src);-->
-<!--            // waterImage.src = "../img/sun.png";-->
-<!--        }, 3000)-->
-<!--    }-->
-<!--</script>-->
+                    if (data['sun'] > 80) {
+                        sunImage.src = sun2Image.src;
+                    } else {
+
+                    }
+
+                    if (data['temperature'] > 80) {
+                        sunImage.src = tempImage.src;
+                    } else {
+
+                    }
+
+                    if (data['moisture'] > 80) {
+
+                    } else {
+
+                    }
+
+                })
+            })
+            // const waterImage = document.getElementById("water-img");
+            // console.log(waterImage.src);
+            // waterImage.src = "../img/sun.png";
+        }, 5000)
+    }
+</script>
 
 </body>
 </html>
