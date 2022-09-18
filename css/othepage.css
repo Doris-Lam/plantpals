@@ -10,13 +10,3 @@ body {
     z-index: 3;
 }
 
-.sun {
-    position: fixed;
-    bottom: 0px;
-    width: 120%;
-    size: 20px;
-}
-
-.sun img {
-    width: 100%;
-}

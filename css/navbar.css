@@ -11,48 +11,45 @@ header {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding: 80px 05%;
+    padding: 90px 05%;
     background-color: #C2EAB4 ;
 }
-
-.nav__links {
-    list-style: none;
-    display: flex;
+.sun {
+    position: fixed;
+    top: 0px;
+    size: 10px;
+    width: 35%;
+    right: 550px;
 }
 
-.nav__links a,
-.cta,
-.overlay__content a {
-    font-family: 'Nunito', sans-serif;
-    font-size: 3.2vw;
-    font-weight: 100;
-    color: #371705;
-    text-decoration: none;
-    text-align: center;
+.sun img {
+    width: 50%;
 }
 
-.nav__links li {
-    padding: 10px 80px;
+.temp {
+    position: fixed;
+    top: -8px;
+    size: 10px;
+    width: 35%;
+    right: 240px;
 }
 
-.nav__links li a:hover {
-    color: #94fa00;
-    padding-bottom: 05px;
+.temp img {
+    width: 50%;
 }
 
-.cta {
-    margin-left: 20px;
-    padding: 8px 20px;
-    background-color: #5582c7;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+
+.water {
+    position: fixed;
+    top: 0px;
+    size: 10px;
+    width: 35%;
+    right: -80px;
 }
 
-.cta:hover {
-    background-color: #95D9F0 ;
-    transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+.water img {
+    width: 55%;
 }
+
+
+

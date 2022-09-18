@@ -11,15 +11,63 @@
 <section class="section">
     <header>
         <nav>
+            <div class="sun">
+                <img id="sun-img" src="../img/sun.png"/>
+            </div>
+
+            <div class="temp">
+                <img id="temp-img" src="../img/thermo.png"/>
+            </div>
+
+            <div class="water">
+                <img id= "water-img" src="../img/water.png"/>
+            </div>
+
 
         </nav>
     </header>
 
-    <div class="sun">
-        <img src="../img/sun.png"/>
-    </div>
 
-</section>
+<!--</section>-->
+
+<!--<script>-->
+<!--    window.onload= function () {-->
+<!--        const waterImage = document.getElementById("water-img");-->
+<!--        const tempImage = document.getElementById("temp-img");-->
+<!--        const sunImage = document.getElementById("sun-img");-->
+
+<!--        const water2Image = document.getElementById("water2-img");-->
+<!--        const temp2Image = document.getElementById("temp2-img");-->
+<!--        const sun2Image = document.getElementById("sun2-img");-->
+
+
+<!--        setInterval(() => {-->
+<!--            console.log("test");-->
+<!--            fetch("https://catfact.ninja/fact").then((response) => {-->
+<!--                //const data= JSON.parse(response);-->
+<!--                response.json().then((data) => {-->
+<!--                    // const sample = {-->
+<!--                    //     fact: "test",-->
+<!--                    //     length: 12,-->
+<!--                    // }-->
+
+<!--                    console.log(data.fact);-->
+<!--                    console.log(data.length)-->
+
+<!--                    if (data.length > 80) {-->
+<!--                        sunImage.src = waterImage.src;-->
+<!--                    }-->
+<!--                    if (data.length > 100) {-->
+<!--                        sunImage.src = tempImage.src;-->
+<!--                    }-->
+<!--                })-->
+<!--            })-->
+<!--            // const waterImage = document.getElementById("water-img");-->
+<!--            // console.log(waterImage.src);-->
+<!--            // waterImage.src = "../img/sun.png";-->
+<!--        }, 3000)-->
+<!--    }-->
+<!--</script>-->
 
 </body>
 </html>
