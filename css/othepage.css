@@ -10,3 +10,26 @@ body {
     z-index: 3;
 }
 
+.sun{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    size: 10px;
+    right: 550px;
+}
+
+.sun img {
+    width: 50%;
+}
+
+.bg2{
+    position: fixed;
+    bottom: 0px;
+    width: 120%;
+    size: 20px;
+    z-index: -2;
+}
+
+.bg2 img {
+    width: 100%
+}
