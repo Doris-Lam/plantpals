@@ -33,3 +33,44 @@ body {
 .bg2 img {
     width: 100%
 }
+
+.clouds{
+    position: fixed;
+    bottom: 55%;
+    size: 10px;
+    width: 90%;
+    z-index: -3;
+    right: 40%;
+}
+
+.clouds img {
+    width: 100%;
+}
+
+.cloudslong{
+    position: fixed;
+    bottom: 40%;
+    size: 10px;
+    width: 90%;
+    z-index: -3;
+    left: 40%;
+}
+
+.cloudslong img {
+    width: 100%;
+}
+
+.plant{
+    position: fixed;
+    bottom: 2%;
+    size: 10px;
+    width: 100%;
+    z-index: -2;
+    left: -30%;
+    height: auto;
+    width: 1500px;
+}
+
+.plant img {
+    width: 100%;
+}
