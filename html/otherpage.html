@@ -38,7 +38,7 @@
         const path = "../img/";
 
         const sunSrc = "sun.png";
-        const tempSrc = "thermo.png"
+        const tempSrc = "temp.png"
         const waterSrc = "water.png"
 
         const water2Src = "water2.png";
@@ -51,15 +51,16 @@
 
         setInterval(() => {
             console.log("test");
+
             fetch("https://catfact.ninja/fact").then((response) => {
                 //const data= JSON.parse(response);
                 response.json().then((data) => {
-                    const sample = {
-                        moisture: 40,
-                        water: 10,
-                       temperature: 20
-                    }
 
+                    const sample = {
+                        sun: 40,
+                        temperature: 10,
+                        water: 20
+                    }
                     console.log(sample['sun']);
                     console.log(sample['temperature'])
                     // console.log(Object.keys(sample).length)
